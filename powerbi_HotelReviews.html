@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width inital-scale=1.0">  
+
+	<link rel="icon" href="img/bm_logo.jpg">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!--Carrusel de imágenes-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet"  href="css/estilo.css">
+
+	<!--Iconos redes-->
+	<link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> 
+
+	<!--Funtes de Google-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+	
+
+	
+	<title>Análisis de Reviews de hoteles</title>
+</head>
+
+
+<body>
+
+	<header class= "l-header">
+		
+		<!--Barra de navegacion-->
+		<nav class="barra_nav grid">
+			
+
+			<!--Mi nomnre lleva al home-->
+			<div>
+				<a href=index.html class="nav_logo">Braian Michel</a>
+			</div>
+
+
+			<div class="nav_menu" id="navMenu">
+					
+
+					<ul class="menu_list">
+						<li class="nav_item"><a href="#dash" class="menu_link active">Dashboard</a></li>
+						<li class="nav_item"><a href="#video" class="menu_link ">Demo</a></li>
+						<li class="nav_item"><a href="#galeria" class="menu_link ">Galeria</a></li>
+						<li class="nav_item"><a href="#resources" class="menu_link ">Recursos</a></li>
+					</ul>
+			</div>
+
+
+			<div class="menu_icon" id="menuIcon">		
+				<i class='bx bx-menu'></i>				
+			</div>
+		
+		</nav>
+
+	</header>
+
+	<main class="class_main">
+
+
+            <!--===== INICIO (HOME) =====-->
+		<section class="dash_section" id="dash">
+			
+			<div></div>
+
+
+			<div class="dash_title">
+				<h2 class="section-title" id='Hotel_title'> Análisis de Reviews de Hoteles</h2>
+				<h4>Descripción del proyecto</h4>
+
+				<p class="sub">El dataset contiene datos extraídos de Booking.com. Los datos son originalmente propiedad de Booking.com.
+				Este conjunto de datos contiene 515.000 opiniones de clientes y puntuaciones de 1493 hoteles de lujo en Europa proporcionando la ubicación geográfica de los mismos, como así también, información detallada de las reviews.
+				<br><br>
+				Se realizó un análisis de la puntuación histórica de los hoteles calificados para luego analizar las reviews que contine el conjunto de datos las cuales corresponden a los años 2015, 2016 y 2017.
+				<br><br> 
+				Dashboard en linea disponible para usuarios registrados de <a href="https://app.powerbi.com">Power BI</a> </p>
+			</div>
+
+
+			<div class="dash">
+				<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c37ba32c-21e6-4176-be2c-1ce1166e09e1&autoAuth=true&ctid=09b7ed3c-6a88-46e2-9f5a-2209bd7b83e2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" ></iframe>
+			</div>
+
+			<div class="dash_mobile">
+				<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c37ba32c-21e6-4176-be2c-1ce1166e09e1&autoAuth=true&ctid=09b7ed3c-6a88-46e2-9f5a-2209bd7b83e2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" ></iframe>
+			</div>
+
+			
+		</section>
+
+
+
+		<section class="demo_section" id="video">
+
+			<div>  
+				<div>
+					<h2 class="section-title">Demo</h2>
+				</div>
+
+				<video class="demo_video" src="video/HotelsReviews (fast).mp4" controls poster="img/HotelReviews/home.JPG">
+				</video>
+				
+			</div>
+
+		</section>
+
+
+
+		<section class="carrusel_section" id="galeria">
+
+			<div>  
+				<div>
+					<h2 class="section-title">Galeria</h2>
+				</div>
+
+				<div class="carousel_container">
+				    
+				  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      <li data-target="#myCarousel" data-slide-to="2"></li>
+				      <li data-target="#myCarousel" data-slide-to="3"></li>
+				      <li data-target="#myCarousel" data-slide-to="4"></li>
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img src="img/HotelReviews/home.JPG" alt="Primera" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img src="img/HotelReviews/Hoteles.JPG" alt="Segunda" style="width:100%;">
+				      </div>
+				    
+				      <div class="item">
+				        <img src="img/HotelReviews/HotelesDM.JPG" alt="Tercera" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img src="img/HotelReviews/reviews.JPG" alt="Cuarta" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img src="img/HotelReviews/resumen.JPG" alt="Cuarta" style="width:100%;">
+				      </div>
+
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				      <span class="sr-only">Next</span>
+				    </a>
+				  </div>
+				</div>
+				
+			</div>
+
+		</section>
+
+
+		<section class= 'resources' id='resources'>
+			
+			<div>
+				<h2 class="section-title">Recursos</h2>
+			</div>
+
+
+			<div class='rec grid'>
+				<div class="rec_box">
+					<div>
+						<p>Para visualizar el dashboard en Power BI Desktop </p>
+					</div>
+			    	
+			    	<div class="resources_link button">
+			    		<a href="venta_dptos.pbix" download="ventas_dptos.pbix">Desgargar .pbix</a>
+			    	</div>
+
+		        </div>
+
+
+				<div class="rec_box">
+					<div>
+						<p>Acceder al dashboard si tenes cuenta en Power Bi Service </p>
+					</div>
+			    	
+			    	<div class="resources_link button">
+			    		<a href='https://app.powerbi.com/reportEmbed?reportId=2b8a50cf-a443-4815-903a-7987ab9f5592&autoAuth=true&ctid=09b7ed3c-6a88-46e2-9f5a-2209bd7b83e2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D'>Dashboard</a>
+			    	</div>
+
+		        </div>
+
+
+
+				<div class="rec_box">
+					<div>
+						<p> Acceder al repositorio del proyecto</p>
+					</div>
+			    	
+			    	<div class="resources_link button">
+			    		<a href="github.com">Github</a>
+			    	</div>
+		        </div>
+
+
+		        <div class="rec_box">
+					<div>
+						<p> Fuente de datos: Kaggle.com </p>
+					</div>
+			    	
+			    	<div class="resources_link button">
+			    		<a href="https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe">Dataset</a>
+			    	</div>
+		        </div>
+
+	        </div>
+
+		</section>
+
+	</main>
+
+	     <footer class="footer">
+            
+            <p class="footer_title">Braian Michel</p>
+            
+            <div class="footer_social">
+                <a href="https://www.linkedin.com/in/braian-michel/" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/braianmichel4190?tab=repositories" class="footer_icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://wa.me/5491134023683" class="footer_icon"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+            
+            <p>&#169; 2020 copyright all right reserved</p>
+        
+        </footer>
+
+
+       
+		<!--Scroll reveral (https://scrollrevealjs.org/guia)-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		
+		<!--Archivo de JavaScript-->
+		<script src="js/main.js"></script>
+
+</body>
+
+</html>
